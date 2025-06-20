@@ -17,10 +17,13 @@ const Login = ({ setDisplay, setActiveComponent, setIdentity }) => {
 
     try {
       setIsLoading(true);
-      const response = await axios.post("http://localhost:700/login", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        "https://backendnote-app.vercel.app/login",
+        {
+          username,
+          password,
+        }
+      );
       setIdentity(response.data.username);
       console.log(response.data);
       setShowError("");

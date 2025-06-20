@@ -9,9 +9,12 @@ const SideList = (props) => {
   useEffect(() => {
     const getInfo = async () => {
       try {
-        const info = await axios.post("http://localhost:700/noteX", {
-          username: props.identity,
-        });
+        const info = await axios.post(
+          "https://backendnote-app.vercel.app/noteX",
+          {
+            username: props.identity,
+          }
+        );
         console.log(info.data);
         const headings = info.data.map((x) => x.heading);
         console.log("this is heading", headings);
@@ -41,9 +44,12 @@ const SideList = (props) => {
     setArr((prev) => prev.filter((x) => x != name));
     props.setAreaValue("");
     try {
-      const deleteResult = await axios.delete("http://localhost:700/notes", {
-        data: { heading: name },
-      });
+      const deleteResult = await axios.delete(
+        "https://backendnote-app.vercel.app/notes",
+        {
+          data: { heading: name },
+        }
+      );
     } catch (error) {
       console.log(error.message);
     }

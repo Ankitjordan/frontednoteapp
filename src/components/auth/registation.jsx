@@ -51,7 +51,7 @@ const Registration = ({ setDisplay, setActiveComponent }) => {
     }
 
     try {
-      await axios.post("http://localhost:700/signup", {
+      await axios.post("https://backendnote-app.vercel.app/signup", {
         username,
         password,
       });

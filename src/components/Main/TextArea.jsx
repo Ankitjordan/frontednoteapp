@@ -12,7 +12,7 @@ const TextArea = (props) => {
     // setObj((pre) => ({ ...pre, [props.handleCommon.common]: props.areaValue }));
     try {
       console.log(props.identity);
-      await axios.put("http://localhost:700/note", {
+      await axios.put("https://backendnote-app.vercel.app/note", {
         username: props.identity,
         body: props.areaValue,
         heading: props.handleCommon.common,
@@ -39,9 +39,12 @@ const TextArea = (props) => {
 
     const ChangeArea = async () => {
       try {
-        const storedData = await axios.post("http://localhost:700/note", {
-          heading: key,
-        });
+        const storedData = await axios.post(
+          "https://backendnote-app.vercel.app/note",
+          {
+            heading: key,
+          }
+        );
         if (storedData.data.msg == "new") {
           props.setAreaValue("");
           return;
