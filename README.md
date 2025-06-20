@@ -1,12 +1,54 @@
-# React + Vite
+# 📝 Full-Stack Notes App (React + Express + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack notes application built using **React (Vite)** for the frontend and **Node.js + Express** for the backend. Users can create, view, and delete notes, which are stored and managed through a backend API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Website
 
-## Expanding the ESLint configuration
+🌐 [Open Live Notes App](https://frontednoteapp.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 GitHub Repositories
+
+- 🟢 **Frontend:** [https://github.com/Ankitjordan/frontednoteapp](https://github.com/Ankitjordan/frontednoteapp)
+- 🔵 **Backend:** [https://github.com/Ankitjordan/backendnoteApp](https://github.com/Ankitjordan/backendnoteApp)
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend:
+- React.js (with Vite)
+- Axios
+- CSS / Tailwind CSS
+- React Hooks
+
+### Backend:
+- Node.js
+- Express.js
+- CORS
+- Body-parser / middleware
+- Deployed via Railway or any hosting platform
+
+---
+
+## ✨ Features
+
+- Create and manage notes
+- Backend storage for persistence
+- Real-time UI update on add/delete
+- RESTful API integration
+- Mobile responsive layout
+- Clean and minimal UI
+
+---
+
+## ⚙️ How to Run Locally
+
+### 1. Clone both repositories:
+
+```bash
+git clone https://github.com/Ankitjordan/frontednoteapp.git
+git clone https://github.com/Ankitjordan/backendnoteApp.git
